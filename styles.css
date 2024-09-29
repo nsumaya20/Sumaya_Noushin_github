@@ -1,0 +1,49 @@
+/* Basic Styles for Small Screens (default) */
+body {
+    background-color: peru;           /* Set background color */
+    color: bisque;                    /* Set text color */
+    font-family: Arial, sans-serif;   /* Font family */
+}
+
+main {
+    background-color: saddlebrown;    /* Main content background */
+    color: gainsboro;                 /* Main content text color */
+    min-height: 50px;
+    padding: 20px;                    /* Combined padding into one rule */
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 10px;
+}
+
+footer {
+    background-color: peru;
+    padding: 10px;
+    text-align: start;
+}/* Screen Styles */
+@media only screen and (min-width: 601px) {
+    header {
+        background-image: url("../images/LogoSmall.png");  /* Use larger logo */
+        background-position: right top;                    /* Same positioning as small screen */
+        background-repeat: no-repeat;                      /* Prevent repetition */
+        min-height: 50px;                                 /* Increase height for larger logo */
+    }
+
+    img.responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 701px) {
+    header {
+        background-image: url("../images/LogoLarge.png");  /* Use larger logo */
+        background-position: right top;                    /* Same positioning as small screen */
+        background-repeat: no-repeat;                      /* Prevent repetition */
+        min-height: 100px; 
+    }
+    img.responsive {
+        width: 100%;
+        height: auto;
+    }
+}
