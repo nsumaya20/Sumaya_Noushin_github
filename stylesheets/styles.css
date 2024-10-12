@@ -1,0 +1,370 @@
+/* Basic Styles for Small Screens (default) */
+body {
+    background-color: #f4e1d2;        /* Light beige for small screens */
+    color: #4a4a4a;                   /* Darker grey text for contrast (about 5:1 ratio) */
+    font-family: Arial, sans-serif;   /* Font family */
+}
+
+main {
+    background-color: #cd853f;        /* Light coral background for main content (warm tone) */
+    color: #2C2C2C;                   /* Dark gray text for contrast (5:1 ratio) */
+    min-height: 50px;
+    padding: 20px;
+    border: 2px solid #607d8b;        /* Blue-gray border */
+}
+
+/* Navigation Styles */
+nav {
+    margin: 10px 0; /* Space around navigation */
+}
+
+nav ul {
+    list-style-type: none;            /* Remove default bullets */
+    padding: 0;                       /* Remove padding */
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 10px;
+}
+
+nav a {
+    color: #ffcc00; /* Gold for unvisited links */
+    text-decoration: none; /* Remove underline */
+    font-size: 1em; /* Default font size */
+    transition: color 0.3s, font-size 0.3s; /* Smooth transition for color and size */
+}
+
+/* Visited link color */
+nav a:visited {
+    color: #6699cc; /* Blue for visited links */
+}
+
+/* Hover effects */
+nav a:hover {
+    color: #ff6699; /* Pink for hover effect */
+    font-size: 1.1em; /* Increase font size on hover */
+}
+
+/* Active link color */
+nav a:active {
+    color: #ff3300; /* Red for active link */
+}
+
+/* Header styles */
+header {
+    background-color: #426a86;        /* Dark blue header background */
+    color: #db8a19;                   /* Gold text for high contrast (ratio > 4.5) */
+    padding: 10px;
+    text-align: start;
+    min-height: 180px;                /* Larger height for small screens */
+    background-image: url("../images/LogoLarge.png");  /* Larger logo for small screens */
+    background-position: right top;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid #607d8b; /* Add blue-gray border below header */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #A2DFF7;        /* Light blue footer background */
+    color: #000000;                   /* Black text for high contrast */
+    padding: 10px;
+    text-align: start;
+}
+
+/* Link styles */
+a {
+    color: #1e88e5;                   /* Bright blue link color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #42a5f5;                   /* Light blue when hovering */
+    text-decoration: underline;
+}
+
+/* Menu Section Styles */
+.menu-heading {
+    font-family: 'Cursive', cursive;  /* Apply cursive font */
+    text-align: center;                /* Center align the heading */
+}
+
+.allergy-info {
+    font-weight: bold;                 /* Make the font bold */
+    color: #c0392b;                    /* Red for visibility (contrast ratio > 4.5) */
+    margin: 20px 0;                   /* Add some margin for spacing */
+    text-align: center;                /* Center align the text */
+}
+
+.menu-section {
+    background-color: #fff4e6;        /* Light peach background for the menu section */
+    width: 80%;                        /* Set the width of the section */
+    margin: 0 auto;                   /* Center the section */
+    padding: 20px;                    /* Add some padding */
+    border-radius: 10px;              /* Round the corners */
+}
+
+/* Basic Styles for Larger Screens */
+@media only screen and (min-width: 601px) {
+    body {
+        background-color: #d5c1b3;    /* Soft brown for larger screens */
+        color: #3e3e3e;               /* Dark gray for contrast (5:1 ratio) */
+    }
+
+    header {
+        background-color: #426a86;    /* Dark blue header background */
+        background-image: url("../images/LogoSmall.png");  /* Smaller logo */
+        min-height: 80px;              /* Smaller height for larger screens */
+        color: #db8a19;                /* Gold text for high contrast */
+    }
+
+    img.responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Smaller Screen Styles */
+@media only screen and (max-width: 701px) {
+    header {
+        background-image: url("../images/LogoLarge.png");  /* Larger logo */
+    }
+
+    img.responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Styles for the description lists */
+dl {
+    margin: 20px 0;                   /* Add margin for spacing */
+}
+
+dt {
+    font-weight: bold;                 /* Bold font for description terms */
+}
+
+dd {
+    font-style: italic;                /* Italic font style for descriptions */
+}
+
+/* Additional styling for the hosts page */
+.hosts-container {
+    background-color: #ffffff;         /* White background for hosts images */
+    border-radius: 10px;               /* Round corners */
+    width: 90%;                        /* Set width to 90% */
+    margin: 20px auto;                /* Center the container */
+    padding: 20px;                    /* Add padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+figure {
+    text-align: center;                /* Center align images and captions */
+}
+
+figcaption {
+    font-weight: bold;                 /* Bold font for captions */
+}
+
+/* Responsive image styles for hosts */
+.host-image {
+    border-radius: 50%;                /* Circular images */
+    width: 80px;                       /* Width for small screens */
+    height: 80px;                      /* Height for small screens */
+}
+
+@media only screen and (min-width: 601px) {
+    .host-image {
+        width: 180px;                  /* Width for large screens */
+        height: 180px;                 /* Height for large screens */
+    }
+}
+/* Global Box-Sizing */
+* {
+    box-sizing: border-box; /* Apply box model universally */
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic Styles for Small Screens (default) */
+body {
+    background-color: #f4e1d2;        /* Light beige for small screens */
+    color: #4a4a4a;                   /* Darker grey text for contrast (about 5:1 ratio) */
+    font-family: Arial, sans-serif;   /* Font family */
+    margin: 0;
+    padding: 20px;                    /* Add padding for content separation */
+    line-height: 1.6;
+}
+
+/* Main content styles */
+main {
+    background-color: #cd853f;        /* Light coral background for main content */
+    color: #2C2C2C;                   /* Dark gray text for contrast (5:1 ratio) */
+    min-height: 50px;
+    padding: 20px;
+    border: 2px solid #607d8b;        /* Blue-gray border */
+    border-radius: 8px;               /* Slightly rounded corners */
+    margin: 20px 0;                   /* Margin for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow to emphasize box model */
+}
+
+/* Navigation Styles */
+nav {
+    margin: 10px 0;                   /* Space around navigation */
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;            /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+    display: inline-flex;             /* Use flex for horizontal alignment */
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav a {
+    color: #ffcc00;                   /* Gold for unvisited links */
+    text-decoration: none;            /* Remove underline */
+    font-size: 1em;
+    padding: 5px 10px;                /* Add padding to links for touch-friendly area */
+    border-radius: 4px;               /* Slight rounding on hover areas */
+    transition: color 0.3s, font-size 0.3s; /* Smooth transition for color and size */
+}
+
+/* Link States */
+nav a:visited {
+    color: #6699cc;                   /* Blue for visited links */
+}
+
+nav a:hover {
+    color: #ff6699;                   /* Pink for hover effect */
+    font-size: 1.1em;                 /* Increase font size on hover */
+}
+
+nav a:active {
+    color: #ff3300;                   /* Red for active link */
+}
+
+/* Header styles */
+header {
+    background-color: #426a86;        /* Dark blue header background */
+    color: #db8a19;                   /* Gold text for high contrast */
+    padding: 20px;
+    text-align: start;
+    min-height: 180px;                /* Larger height for small screens */
+    background-image: url("../images/LogoLarge.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid #607d8b; /* Blue-gray border below header */
+    margin-bottom: 20px;              /* Margin below header */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #A2DFF7;        /* Light blue footer background */
+    color: #000000;                   /* Black text for high contrast */
+    padding: 20px;                    /* Padding around footer content */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Menu Section Styles */
+.menu-heading {
+    font-family: 'Cursive', cursive;  /* Apply cursive font */
+    text-align: center;               /* Center align the heading */
+    margin-bottom: 15px;
+}
+
+.allergy-info {
+    font-weight: bold;                /* Make the font bold */
+    color: #c0392b;                   /* Red for visibility */
+    margin: 20px 0;                   /* Add margin for spacing */
+    text-align: center;
+}
+
+.menu-section {
+    background-color: #fff4e6;        /* Light peach background for the menu section */
+    width: 90%;                       /* Set the width of the section */
+    margin: 20px auto;                /* Center the section with margin */
+    padding: 20px;
+    border-radius: 10px;              /* Round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to emphasize box model */
+}
+
+/* Description List Styles */
+dl {
+    margin: 20px 0;                   /* Add margin for spacing */
+}
+
+dt {
+    font-weight: bold;                /* Bold font for description terms */
+}
+
+dd {
+    font-style: italic;               /* Italic font style for descriptions */
+}
+
+/* Host Image Section */
+.hosts-container {
+    background-color: #ffffff;        /* White background for hosts images */
+    border-radius: 10px;
+    width: 90%;                       /* Set width to 90% */
+    margin: 20px auto;                /* Center the container */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+figure {
+    text-align: center;               /* Center align images and captions */
+    margin: 20px 0;                   /* Space between figures */
+}
+
+figcaption {
+    font-weight: bold;                /* Bold font for captions */
+}
+
+/* Responsive image styles for hosts */
+.host-image {
+    border-radius: 50%;               /* Circular images */
+    width: 80px;                      /* Width for small screens */
+    height: 80px;
+    margin-bottom: 10px;              /* Spacing below image */
+}
+
+@media only screen and (min-width: 601px) {
+    .host-image {
+        width: 180px;                 /* Width for large screens */
+        height: 180px;
+    }
+}
+
+/* Larger Screens */
+@media only screen and (min-width: 601px) {
+    body {
+        background-color: #d5c1b3;    /* Soft brown for larger screens */
+        color: #3e3e3e;               /* Dark gray for contrast */
+    }
+
+    header {
+        background-image: url("../images/LogoSmall.png");  /* Smaller logo for larger screens */
+        min-height: 80px;             /* Smaller height for larger screens */
+    }
+
+    img.responsive {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Smaller Screens */
+@media only screen and (max-width: 701px) {
+    header {
+        background-image: url("../images/LogoLarge.png");  /* Larger logo */
+        min-height: 180px;
+    }
+}
+
