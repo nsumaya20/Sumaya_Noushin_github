@@ -1,0 +1,239 @@
+body {
+    background-color: #f4e1d2; /* Light beige */
+    color: #4a4a4a;            /* Darker grey text for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+main {
+    background-color: #cd853f; /* Light coral */
+    color: #2C2C2C;            /* Dark grey text */
+    min-height: 50px;
+    padding: 20px;
+    border: 2px solid #607d8b; /* Blue-gray border */
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Navigation Styles */
+nav {
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex; /* Horizontal navigation */
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav a {
+    color: #ffcc00; /* Gold for links */
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+/* Link States */
+nav a:visited {
+    color: #6699cc;
+}
+
+nav a:hover {
+    color: #ff6699;
+    font-size: 1.1em;
+}
+
+nav a:active {
+    color: #ff3300;
+}
+
+/* Header Styles */
+header {
+    background-color: #426a86; /* Dark blue */
+    color: #db8a19;            /* Gold */
+    padding: 20px;
+    text-align: start;
+    min-height: 180px;
+    background-image: url("../images/LogoLarge.png"); /* Large logo */
+    background-position: right top;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid #607d8b;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #A2DFF7; /* Light blue */
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+/* Menu Section */
+.menu-heading {
+    font-family: 'Cursive', cursive;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.allergy-info {
+    font-weight: bold;
+    color: #c0392b;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu-section {
+    background-color: #fff4e6; /* Light peach */
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Description List */
+dl {
+    margin: 20px 0;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    font-style: italic;
+}
+/* Host Section */
+.hosts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+.host-image {
+    border-radius: 50%; /* Circular images */
+    width: 100%;        /* Full width */
+    max-width: 300px;   /* Max size */
+    height: auto;
+}
+
+/* Sponsors Section */
+.sponsors-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.sponsors-container img {
+    width: 100px;
+}
+/* Flexbox for navigation */
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.nav-container a {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    .nav-container a {
+        flex-grow: 1;
+    }
+}
+
+/* Flexbox for Hosts section */
+.hosts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.hosts-container figure {
+    margin: 10px;
+    text-align: center;
+}
+
+.host-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Responsive image for smaller screens */
+@media (max-width: 768px) {
+    .host-image {
+        width: 80%;
+    }
+}
+/* Styles for Larger Screens */
+@media only screen and (min-width: 601px) {
+    body {
+        background-color: #d5c1b3; /* Soft brown */
+        color: #3e3e3e;
+    }
+
+    header {
+        background-image: url("../images/LogoSmall.png");
+        min-height: 80px; /* Smaller height for large screens */
+    }
+
+    .host-image {
+        width: 180px; /* Larger host images */
+        height: 180px;
+    }
+}
+
+/* Styles for Smaller Screens */
+@media only screen and (max-width: 701px) {
+    header {
+        background-image: url("../images/LogoLarge.png");
+        min-height: 180px; /* Larger header for small screens */
+    }
+}
+/* Global Box-Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
