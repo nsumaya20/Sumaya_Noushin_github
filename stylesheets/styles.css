@@ -207,7 +207,7 @@ figcaption {
     }
 }
 /* Styles for Larger Screens */
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 600px) {
     body {
         background-color: #d5c1b3; /* Soft brown */
         color: #3e3e3e;
@@ -236,4 +236,41 @@ figcaption {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+/* Gridview
+/* Grid container for images */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific item styles */
+.wide {
+    grid-column: span 3; /* Wide image spanning all columns */
+}
+
+.tall {
+    grid-row: span 2; /* Tall image spanning two rows */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
 }
