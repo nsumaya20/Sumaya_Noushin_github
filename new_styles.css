@@ -114,3 +114,23 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
+
+/* Style for the video section */
+.video-container {
+    background-color: #cd853f; /* Light coral */
+    color: #2C2C2C;            /* Dark grey text */
+    padding: 20px;
+    border: 2px solid #607d8b; /* Blue-gray border */
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the video element */
+.styled-video {
+    display: block; /* Ensures proper centering */
+    width: 100%; /* Make the video fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Slight rounding for the video itself */
+}
