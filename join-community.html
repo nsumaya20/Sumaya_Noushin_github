@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Plant Haven</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="plant-care.html">Plant Care</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="join-community.html">Join Our Community</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+     <!-- Video Section -->
+     <section id="video-section">
+        <h2>Join Our Growing Community of Plant Lovers</h2>
+         <video controls autoplay muted loop class="video-container">
+            <source src="Media/plants.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <div class="grid-container">
+        <h2>Share your thriving plants</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="images/SS1.jpg" alt="Anthurium">
+                <h3>Ana Anthurium</h3>
+            </div>
+            <div class="product-item">
+                <img src="images/SS2.jpg" alt="Black ZZ Plant">
+                <h3>Jon Blackman</h3>
+            </div>
+            <div class="product-item">
+                <img src="images/SS3.jpg" alt="Anthurium">
+                <h3>Arun Thapa</h3>
+            </div>
+            <div class="product-item">
+                <img src="images/SS4.jpg" alt="Black ZZ Plant">
+                <h3>Maliha Momo</h3>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Community Join Section -->
+    <section id="community">
+        <div class="container">
+            <h2>Sign Up to Stay Updated</h2>
+            <p>Let’s grow together
+                Drop your information below to become part of our vibrant plant-loving community. You'll get regular updates, plant care tips, and exclusive promotions!</p>
+
+            <form action="submit-form.php" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Full Name">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email Address">
+
+                <label for="interests">What Plants Are You Interested In?</label>
+                <textarea id="interests" name="interests" placeholder="Tell us about your favorite plants!" rows="4"></textarea>
+
+                <button type="submit" class="cta-button">Join Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>© <span id="footer-date"></span> Your Plant Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

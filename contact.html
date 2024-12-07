@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Plant Haven</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="plant-care.html">Plant Care</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out. We’re here to help!</p>
+            
+            <form action="#" method="POST" onsubmit="return validateContactForm()">
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    
+        <section class="contact">
+        <h2>Plant Haven</h2>
+        <address>
+            123 Green Thumb Lane<br>
+            Botanical City, FL 54321<br>
+            USA
+        </address>
+        <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+        <p>Email: <a href="mailto:info@planthaven.com">info@planthaven.com</a></p>
+        <p>As a family-owned business, we cherish every customer and look forward to helping you find the perfect plant for your home!</p>
+    </section>
+    
+        <footer>
+            <div class="container">
+                <p>© <span id="footer-date"></span> Plant Haven. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+    </html>
+    
